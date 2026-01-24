@@ -109,8 +109,8 @@ project-root/
    Create a `.env` file in the `server` directory:
    ```env
    PORT=5000
-   MONGO_URI=mongodb+srv://Abdullah:abdullah@cluster0.y8pmy.mongodb.net/instechsol?retryWrites=true&w=majority&appName=Cluster0
-   JWT_SECRET=instechsol
+   MONGO_URI={MongodbURI}
+   JWT_SECRET={secretkey}
    ```
 
    Create a `.env` file in the `client` directory:
