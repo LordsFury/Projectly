@@ -8,8 +8,15 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
 app.use(express.json());
+
+const corsOptions = {
+  origin: ["https://projectly-xi.vercel.app/login", "http://localhost:5173"],
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],    
+  credentials: true                              
+};
+
+app.use(cors(corsOptions));
 
 app.get("/", (req, res) => {
   res.send("API is running...");
