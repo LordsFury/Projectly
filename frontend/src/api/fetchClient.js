@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = "VITE_API_URL/api";
 
 export const fetchClient = async (url, options = {}) => {
   const token = localStorage.getItem("token");
