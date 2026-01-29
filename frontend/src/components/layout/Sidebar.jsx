@@ -53,7 +53,7 @@ const Sidebar = () => {
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
           <h2 className="text-2xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            InstechSol
+            Projectly
           </h2>
 
           {/* Close button (mobile) */}
