@@ -1,6 +1,8 @@
+const API_URL = import.meta.env.VITE_API_URL;
+
 export const fetchClient = async (url, options = {}) => {
   const token = localStorage.getItem("token");
-  const res = await fetch(process.env.VITE_API_URL + url, {
+  const res = await fetch(API_URL + url, {
     headers: {
       "Content-Type": "application/json",
       ...(token && { Authorization: `Bearer ${token}` }),
